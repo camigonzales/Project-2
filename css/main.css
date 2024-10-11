@@ -1,3 +1,8 @@
+body{
+    margin: 0px;
+    padding: 0px;
+
+}
 .logo {
     max-width: 80px;
 }
@@ -6,9 +11,9 @@ header{
     display:flex;
     align-items: center;
     justify-content:space-between;
-    background-color: #ffdfe4;
+    background-color: #fcc0c5;
     position: sticky;
-    top:0px
+    top:0px;
 }
 @media (max-width: 999px) {
     .main-nav {
@@ -19,7 +24,7 @@ header{
     display: none;
     flex-direction: column;
     align-items: center;
-    background-color: #ffdfe4;
+    background-color: #fcc0c5;
     position: absolute;
     top: 112px;
     left: 0;
@@ -34,6 +39,70 @@ header{
     }
   }
 
+.hero-container {
+background-image: url(../img/hero-section-background.png);
+height:100vh;
+background-size:cover;
+background-position:center -350px;
+background-repeat:no-repeat;
+display:flex;
+align-items: flex-start;
+justify-content:space-between;
+padding:0 150px;
+}
+
+.contact-button {
+    padding: 20px 20px;
+    background-color:#ffffff;
+    color:#234534;
+    font-size: 20px;
+    border-radius:30px;
+    cursor:pointer;
+    text-decoration: none;
+    position: center;
+    display: block;
+    text-align: center;
+    width: fit-content;
+    margin: 30px auto;
+}
+
+.contact-button:hover {
+    background-color: #234534;
+    color:#ffffff
+}
+
+@font-face {
+    font-family: "Sofia";
+    src: url(../font/Sofia-Regular.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
   h1{
-    font-size:40px;
+    font-family: "Sofia";
+    font-size:70px;
+    margin:0px;
+    color:#234534;
+    text-align:center;
+  }
+
+  .hero-text {
+    max-width:60%;
+    text-align: center;
+  }
+
+  .hero-text p {
+    font-size: 20px;
+    line-height:1.5;
+    margin:10px 0;
+  }
+
+  .hero-left-image, .hero-right-image {
+    max-width: 250px;
+  }
+
+  .hero-left-image img, .hero-right-image img {
+    width: 100%;
+    height:auto;
+    display:block;
   }
