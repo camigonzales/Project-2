@@ -59,6 +59,7 @@ header{
     color:#234534;
     font-family:Georgia, 'Times New Roman', Times, serif;
     text-decoration:none;
+    margin:12px 0;
   }
 
   .mobile-main-nav a:hover {
@@ -138,12 +139,16 @@ padding:0 150px;
     width: 100%;
     height:auto;
     display:block;
+    transition: transform 0.5s ease;
   }
 
-  @media (max-width:999px){
+  .hero-left-image img:hover, .hero-right-image img:hover {
+    transform:rotate(360deg);
+  }
+
+  @media (max-width:600px){
     .hero-container{
-      padding: 0 20px;
-      height: 105vh
+      padding: 0 10px;
     }
     h1 {
       font-size:40px;
