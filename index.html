@@ -27,29 +27,25 @@
   <header>
     <img class="logo" src="./img/logo.jpg" alt="logo">
     <nav class="main-nav">
-      <a href="">Home</a>
-      <a href="">Products</a>
-      <a href="">Contact Me!</a>
-      <a href="">About</a>
-      <a href="">Socials</a>
+      <a href="index.html">Home</a>
+      <a href="#featuredproducts">Products</a>
+      <a href="#contactform">Contact Me!</a>
     </nav>
     <div class="mobile-nav-wrapper">
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        MENU
+        Menu
       </a>
       <nav id="myLinks" class="mobile-main-nav">
-        <a href="">Home</a>
-        <a href="">Products</a>
-        <a href="">Contact Me!</a>
-        <a href="">About</a>
-        <a href="">Socials</a>
+        <a href="index.html">Home</a>
+        <a href="#featuredproducts">Products</a>
+        <a href="#contactform">Contact Me!</a>
        </nav>
       </div>
   </header>
 
   <div class="hero-container">
     <div class="hero-left-image">
-      <img src="./img/flowers2.png" alt="">
+      <img src="./img/flowers2.png" alt="flowers">
     </div>
    <div class="hero-text">
       <h1>Hi there!</h1>
@@ -58,11 +54,61 @@
       <a href="#contactform" class="contact-button">Contact Me!</a>
     </div>
     <div class="hero-right-image">
-      <img src="./img/flowers1.png" alt="">
+      <img src="./img/flowers1.png" alt="flowers">
     </div>
   </div>
 
-  <script src="js/main.js"></script>
+  <div id="featuredproducts" class="featured-content-container">
+    <h2>-Featured Products-</h2>
+    <div class="featured-items">
+        <div class="featured-item">
+          <h3>Banners</h3>
+          <img src="./img/Banner.JPG" alt="banner">
+          <a href="banners.html" class="shop-button">Shop Now</a>
+        </div>
+        <div class="featured-item">
+          <h3>Clipboards</h3>
+          <img src="./img/Clipboards.JPG" alt="clipboards">
+          <a href="clipboards.html" class="shop-button">Shop Now</a>
+        </div>
+        <div class="featured-item">
+          <h3>Buckets</h3> 
+          <img src="./img/Bucket.JPG" alt="bucket"> 
+          <a href="buckets.html" class="shop-button">Shop Now</a>
+        </div>
+    </div>
+  </div>
+
+<div id="contactform" class="contact-me-form">
+  <form action="thankyou.html">
+    <h4>Contact Me!</h4>
+    <p>Please contact me to place your order!</p>
+    <hr>
+
+    <label for="name"><b>Name</b></label>
+    <input type="text" placeholder="Name" name="name" required>
+
+    <label for="email"><b>Email</b></label>
+    <input type="email" placeholder="Email" name="email" required>
+
+    <label for="subject"><b>Subject</b></label>
+    <input type="text" placeholder="Subject" name="subject" required>
+    
+    <label for="message"><b>Message</b></label>
+    <textarea placeholder="Write your message here..." name="message" required></textarea>
+
+    <div class="form-buttons">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <button type="submit" class="signupbtn">Send</button>
+    </div>
+  </form>
+</div>
+
+<footer>
+    <img class="logo2" src="./img/Painted By Cami copy.png" alt="">
+</footer>
+
+<script src="js/main.js"></script>
 </body>
 
 </html>
